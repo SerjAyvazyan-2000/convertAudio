@@ -104,37 +104,25 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     cursor: pointer;
+    animation: scroll-left 10s linear infinite;
 
 }
-
-.column-1 {
-    display: flex;
-    animation: marqueeRow2 10s linear infinite;
-}
-
-.column-2 {
-    display: flex;
-    animation: marqueeRow1 10s linear infinite;
-}
-
-
-@keyframes marqueeRow2 {
-    from {
-        transform: translateX(-100%);
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
     }
-    to {
-        transform: translateX(100%);
+    100% {
+        transform: translateX(calc(-180px * 5));
     }
 }
 
-@keyframes marqueeRow1 {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+.song-images-column {
+    width: calc(180px * 10);
 }
+
+
+
+
 
 .desired-item-img {
     padding: 0;
