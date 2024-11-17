@@ -38,6 +38,7 @@ const swiper = new Swiper('.indispensable-swiper', {
 
 });
 
+
 const swiperReviews = new Swiper('.reviews-swiper', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -46,43 +47,69 @@ const swiperReviews = new Swiper('.reviews-swiper', {
     pagination: {
         el: '.swiper-pagination',
     },
-
     navigation: {
-        nextEl: '.-convert-swiper-next',
-        prevEl: '.convert-swiper-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-
     breakpoints: {
         320: {
             slidesPerView: 1,
             spaceBetween: 10
         },
-
         567: {
             slidesPerView: 2,
             spaceBetween: 10
-
         },
         600: {
             slidesPerView: 3,
             spaceBetween: 10
-
         },
         900: {
             slidesPerView: 3,
             spaceBetween: 10
-
         },
-
         1200: {
             slidesPerView: 3,
             spaceBetween: 10
-
         },
-    }
-
-
+    },
 });
+
+// document.querySelectorAll('.swiper-slide').forEach((slide, index) => {
+//     slide.addEventListener('click', function () {
+//         const currentIndex = swiperReviews.activeIndex;
+//         const totalSlides = swiperReviews.slides.length;
+//
+//
+//         if (index < currentIndex) {
+//             // Если кликнули на слайд слева от текущего активного, переключаемся на предыдущий
+//             swiperReviews.slidePrev();
+//         } else if (index > currentIndex) {
+//             // Если кликнули на слайд справа от текущего активного, переключаемся на следующий
+//             swiperReviews.slideNext();
+//         }
+//     });
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let generatorSwiper = new Swiper(".generator-swiper", {
