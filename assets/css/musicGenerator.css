@@ -38,6 +38,7 @@
 
 .generator-slides {
     margin-top: 88px;
+    margin-right: 60px;
 }
 
 .generator-sub span {
@@ -124,6 +125,9 @@
 
 .desired-result-media {
     margin-top: 24px;
+}
+.desired-result-media img{
+    width: 100%;
 }
 .desired-image-mobile{
     display: none;
@@ -233,6 +237,12 @@
     .desired-image-mobile{
         display: block;
     }
+    .generator-slides {
+        margin-right: 120px;
+    }
+    .generator-swiper-pagination{
+        left: 60px !important;
+    }
     .about-item-padding{
         padding: 24px 20px;
     }
@@ -268,8 +278,9 @@
         top:-120px
 
     }
+
     .clue-wrap-mobile{
-        display: unset;
+        display: unset ;
     }
     .generator-sub {
         max-width: 320px;
@@ -287,6 +298,15 @@
 
     .generator-swiper-pagination {
         width: 100% !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .generator-slides {
+        margin-right: 0;
+    }
+    .generator-swiper-pagination{
+        left: 0 !important;
     }
 }
 

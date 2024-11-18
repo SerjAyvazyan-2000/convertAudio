@@ -46,6 +46,7 @@ const swiperReviews = new Swiper('.reviews-swiper', {
 
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
     navigation: {
         nextEl: '.swiper-button-next',
@@ -75,52 +76,16 @@ const swiperReviews = new Swiper('.reviews-swiper', {
     },
 });
 
-// document.querySelectorAll('.swiper-slide').forEach((slide, index) => {
-//     slide.addEventListener('click', function () {
-//         const currentIndex = swiperReviews.activeIndex;
-//         const totalSlides = swiperReviews.slides.length;
-//
-//
-//         if (index < currentIndex) {
-//             // Если кликнули на слайд слева от текущего активного, переключаемся на предыдущий
-//             swiperReviews.slidePrev();
-//         } else if (index > currentIndex) {
-//             // Если кликнули на слайд справа от текущего активного, переключаемся на следующий
-//             swiperReviews.slideNext();
-//         }
-//     });
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let generatorSwiper = new Swiper(".generator-swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
+    autoplay:true,
     slidesPerView: 5,
-    initialSlide: 2, // Установить центральный слайд (начиная с 0)
-    // loop: true, // Зациклить слайды
+    initialSlide: 2,
     coverflowEffect: {
-        rotate: -5,
+        rotate: 0,
         stretch: 0,
         depth: 100,
         modifier: 3,
@@ -137,12 +102,12 @@ let generatorSwiper = new Swiper(".generator-swiper", {
             slidesPerView: 2,
         },
         567: {
-            slidesPerView: 3.5,
+            slidesPerView: 3,
 
         },
 
         900: {
-            slidesPerView: 4.5,
+            slidesPerView: 4,
 
         },
         1200: {

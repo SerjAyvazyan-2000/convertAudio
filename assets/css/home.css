@@ -518,6 +518,11 @@
 .generator-swiper {
     overflow: unset !important;
 }
+.reviews-section{
+    margin-top: -340px;
+    position: relative;
+    z-index: 1;
+}
 
 .reviews-author-img img {
     mix-blend-mode: multiply;
@@ -550,7 +555,9 @@
     width: 80px !important;
 
 }
-
+.reviews-swiper-pagination{
+    z-index: 2 !important;
+}
 
 .indispensable-pagination {
     bottom: -40px !important;
@@ -768,6 +775,10 @@
     .desired-result-tools {
         flex-direction: column;
         gap: 12px;
+    }
+    .reviews-section{
+        margin-top: 0;
+
     }
 
     .innovative-content {

@@ -34,7 +34,7 @@
 
 }
 .btn-black:hover {
-    opacity: .6;
+    background: #0057FF;
 }
 .btn-white {
     transition: .3s;
