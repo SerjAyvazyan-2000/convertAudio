@@ -38,7 +38,6 @@
 
 .generator-slides {
     margin-top: 88px;
-    margin-right: 60px;
 }
 
 .generator-sub span {
@@ -46,7 +45,6 @@
 }
 
 .generator-slide {
-    min-width: 280px;
     padding: 8px 8px 8px 12px;
     background: #FFFFFF;
     border: 1px solid #0057FF1F;
@@ -129,9 +127,7 @@
 .desired-result-media img{
     width: 100%;
 }
-.desired-image-mobile{
-    display: none;
-}
+
 .result-clue-width{
     max-width: 320px;
 }
@@ -234,12 +230,8 @@
 }
 
 @media (max-width: 768px) {
-    .desired-image-mobile{
-        display: block;
-    }
-    .generator-slides {
-        margin-right: 120px;
-    }
+
+
     .generator-swiper-pagination{
         left: 60px !important;
     }
@@ -302,9 +294,7 @@
 }
 
 @media (max-width: 390px) {
-    .generator-slides {
-        margin-right: 0;
-    }
+
     .generator-swiper-pagination{
         left: 0 !important;
     }

@@ -81,8 +81,7 @@ let generatorSwiper = new Swiper(".generator-swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    autoplay:true,
-    slidesPerView: 5,
+    // autoplay:true,
     initialSlide: 2,
     coverflowEffect: {
         rotate: 0,
@@ -111,7 +110,7 @@ let generatorSwiper = new Swiper(".generator-swiper", {
 
         },
         1200: {
-            slidesPerView: 5,
+            slidesPerView: 4.6,
         },
     }
 
