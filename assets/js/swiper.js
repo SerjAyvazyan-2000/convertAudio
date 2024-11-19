@@ -2,8 +2,7 @@
 const swiper = new Swiper('.indispensable-swiper', {
     slidesPerView: 3,
     spaceBetween: 10,
-    centeredSlides: true, // Центровка активного слайда
-
+    loop: true,
     pagination: {
         el: '.indispensable-pagination',
         clickable: true,
@@ -43,7 +42,7 @@ const swiperReviews = new Swiper('.reviews-swiper', {
     slidesPerView: 1,
     spaceBetween: 10,
     clickable: true,
-
+    loop: true,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -81,36 +80,40 @@ let generatorSwiper = new Swiper(".generator-swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    autoplay:true,
+    // autoplay:true,
     initialSlide: 2,
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
         depth: 100,
-        modifier: 3,
+        modifier: 4,
         slideShadows: true,
     },
     pagination: {
         el: ".swiper-pagination",
     },
     breakpoints: {
+
         320: {
-            slidesPerView: 1.2,
+            slidesPerView: 1,
         },
-        400: {
+        430: {
+            slidesPerView: 1.5,
+        },
+        540: {
+            slidesPerView: 1.5,
+        },
+        855: {
             slidesPerView: 2,
+
         },
-        567: {
+
+        1027: {
             slidesPerView: 3,
 
         },
-
-        900: {
-            slidesPerView: 4,
-
-        },
         1200: {
-            slidesPerView: 4.6,
+            slidesPerView: 4,
         },
     }
 

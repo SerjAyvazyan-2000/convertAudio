@@ -50,6 +50,7 @@
     border: 1px solid #0057FF1F;
     border-radius: 20px;
     min-height: 312px;
+    min-width: 280px;
 }
 
 .generator-slide-img img {
@@ -87,19 +88,15 @@
 .about-item-padding36{
      padding: 36px;
 }
-/*.generator-swiper-pagination .swiper-pagination-bullet::before {*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    width: 100%;*/
-/*    background: #D7D7D7;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    display: block;*/
-/*    z-index: 11 !important;*/
-/*    height: 100%;*/
 
-/*}*/
+.generator-slide-name{
+     opacity: 0;
+    transition: .3s;
+}
+.generator-slides .swiper-slide-active .generator-slide-name{
+    opacity: 1;
 
+}
 .generator-swiper-pagination .swiper-pagination-bullet {
     flex: 0 0 12px;
     height: 12px;

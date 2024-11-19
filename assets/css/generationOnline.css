@@ -101,35 +101,38 @@
 .song-images-column {
     gap: 24px;
     justify-content: space-between;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
     cursor: pointer;
 
 }
 .column-1{
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 45s linear infinite;
 
 }
 .column-2{
-    animation: scroll-right 10s linear infinite;
+    animation: scroll-right 45s linear infinite;
 
 }
 @keyframes scroll-left {
     0% {
         transform: translateX(0);
     }
-    100% {
-        transform: translateX(calc(-180px * 5));
-    }
-}
-@keyframes scroll-right {
-    0% {
-        transform: translateX(calc(-180px * 5));
-
+    50% {
+        transform: translateX(-100%);
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
@@ -137,8 +140,13 @@
 
 .desired-item-img {
     padding: 0;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
 }
-
+.desired-item-img img{
+    width: 100%;
+}
 .song-about-section {
     position: relative;
     min-height: 877px;
@@ -370,9 +378,6 @@
         gap: 24px;
     }
 
-    .desired-item-img img {
-        width: 100%;
-    }
 
     .desired-result-item:nth-child(3) {
         order: 5;

@@ -54,36 +54,37 @@ window.addEventListener('scroll', function() {
 
 document.querySelectorAll('.btn-main').forEach(btn => {
     const iconVoice = btn.parentElement.querySelector('.icon-voice');
+    const mainActions = btn.closest('.main-actions');
 
     btn.addEventListener('mouseenter', () => {
         if (iconVoice) {
-            iconVoice.classList.add('hovered');
+            iconVoice.classList.add('icon-hover');
         }
+        mainActions.classList.add('active'); // Добавляем класс active
+
     });
 
     btn.addEventListener('mouseleave', () => {
         if (iconVoice) {
-            iconVoice.classList.remove('hovered');
+            iconVoice.classList.remove('icon-hover');
         }
+        mainActions.classList.remove('active'); // Удаляем класс active
+
     });
 });
 
 
 function toggleActiveState(item) {
-    const icon = item.querySelector('.asks-list-icon');
-    const sub = item.querySelector('.asks-list-sub');
+    const allItems = document.querySelectorAll('.often-asks-item');
 
-    if (icon.classList.contains('active') && sub.classList.contains('active')) {
-        icon.classList.remove('active');
-        sub.classList.remove('active');
-    } else {
-        document.querySelectorAll('.asks-list-icon.active, .asks-list-sub.active').forEach(activeItem => {
-            activeItem.classList.remove('active');
-        });
+    allItems.forEach(otherItem => {
+        if (otherItem !== item) {
+            otherItem.classList.remove('active');
+        }
+    });
 
-        icon.classList.add('active');
-        sub.classList.add('active');
-    }
+    // Переключаем активный класс только для выбранного элемента
+    item.classList.toggle('active');
 }
 
 document.querySelectorAll('.often-asks-item').forEach(item => {
@@ -94,8 +95,6 @@ document.querySelectorAll('.often-asks-item').forEach(item => {
         toggleActiveState(item);
     });
 });
-
-
 
 
 function updateSlider(slider, valueDisplay) {

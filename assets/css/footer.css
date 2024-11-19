@@ -64,6 +64,7 @@
     .footer-big-text {
         font-size: 100px;
         line-height: 190px;
+        bottom: -60px;
     }
 
 }
