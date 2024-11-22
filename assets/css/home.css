@@ -365,7 +365,7 @@
 
 }
 .animation-card{
-    will-change: transform; /* Оптимизация анимации */
+    will-change: transform;
     position: relative;
 
 }
@@ -1091,6 +1091,8 @@
     .indispensable-section {
         padding: 0 0 80px 0;
     }
+
+
 
     .often-asks-item {
         min-height: 80px;
